@@ -1,0 +1,35 @@
+/* CSS Structure
+- Fonts & design system
+
+*/
+@font-face {
+  font-family: "Fraunces";
+  src: url('../fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Manrope";
+  src: url('../fonts/manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+}
+:root {
+  font-size: 20px;
+  font-weight: 400;
+  --serif: "Fraunces", serif;
+  --sans-serif: "Manrope", sans-serif;
+  --dark-purple: #24053E;
+  --eucalyptus: #44FFA1;
+  --dark-gray: #584D62;
+  --ghost-white: #FCF8FF;
+  --white: #FFFFFF;
+}
+h1, h2, h3 {
+  font-weight: 600;
+}
+p {
+  font-size: 0.9rem;
+}
+btn-primary {
+
+}
+btn-secondary {
+  
+}
