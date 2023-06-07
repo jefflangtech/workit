@@ -30,6 +30,7 @@ body {
   /* background-color: #24053E; */
   font-family: var(--sans-serif);
 }
+/* Remember to change body rules */
 
 h1, h2, h3 {
   font-weight: 600;
