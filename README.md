@@ -59,6 +59,9 @@ Based on my layout sketch I *think* that I'll be creating this page like so:
 
 ![](./notes-sketch.jpg)
 
+- Readme/notes/plan update (0:20)
+- 
+
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
