@@ -50,6 +50,13 @@ Here is how it went:
 - Set up the design system (1:04)
 - Markup the layout (0:50)
 
+Based on my layout sketch I *think* that I'll be creating this page like so:
+1. Top nav simple in flex (it doesn't need flex but a more complex nav would)
+2. Header-hero section with 3 divs where the SVG components are transformed in position or scale. Thinking I can do this with relative positioning but not entirely sure. The curved border edge I will have to look up how to do
+3. Pretty simple grid section for the 1-2-3 parts
+4. The "owner headshot" and "Be the first to test" parts actually look fun to implement and I'm thinking that they will be transforms adjusted for media layouts. It looks like each is sized to fit in its own block but is then moved. I'm trying that first
+5. Footer again super each with some centered logos/links
+
 ![](./notes-sketch.jpg)
 
 ```html
