@@ -1,6 +1,9 @@
 /* CSS Structure
 - Fonts & design system
+- Utility classes
+- Basic document structure
 
+- Media queries
 */
 @font-face {
   font-family: "Fraunces";
@@ -21,16 +24,6 @@
   --color-bg: #FCF8FF;
   --white: #FFFFFF;
 }
-
-/* For design system setup */
-body {
-  text-align: center;
-  width: 75%;
-  margin: auto;
-  /* background-color: #24053E; */
-  font-family: var(--sans-serif);
-}
-/* Remember to change body rules */
 
 h1, h2, h3 {
   font-weight: 600;
@@ -74,4 +67,43 @@ button {
 }
 .btn-secondary:hover {
   color: var(--color-cta);
+}
+
+/* Utility classes */
+.bg-dark {
+  background-color: var(--color-primary);
+}
+.padding-sides {
+  padding-inline: 8.25rem;
+}
+
+/* Basic document structure */
+body {
+  max-width: 72rem;
+  margin: auto;
+}
+nav {
+  padding-top: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media queries */
+@media (max-width: 1098px) {
+  .padding-sides {
+    padding-inline: calc(0.15 * 100vw);
+  }
+}
+@media (max-width: 933px) {
+  .padding-sides {
+    padding-inline: calc(0.1 * 100vw);
+  }
+}
+@media (max-width: 768px) {
+  .padding-sides {
+    padding-inline: 2rem;
+  }
+  nav {
+    padding-top: 1.8rem;
+  }
 }

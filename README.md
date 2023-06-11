@@ -60,7 +60,8 @@ Based on my layout sketch I *think* that I'll be creating this page like so:
 ![](./notes-sketch.jpg)
 
 - Readme/notes/plan update (0:20)
-- 
+- Nav and some media queries (1:02)
+- - I was hoping to get the inline padding to shrink in a linear fashion as the screen decreased in size but discovered that the CSS calc function is not that capable...yet
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
