@@ -32,6 +32,7 @@ h1, h2, h3 {
 h1 {
   font-size: 4rem;
   line-height: 4rem;
+  color: var(--white);
 }
 h2 {
   font-size: 2.8rem;
@@ -55,6 +56,7 @@ button {
   border: 2px solid var(--color-cta);
   padding-inline: 1.2rem;
   padding-block: 0.65rem;
+  min-width: 8rem;
 }
 .btn-primary:hover {
   color: var(--color-cta);
@@ -76,16 +78,75 @@ button {
 .padding-sides {
   padding-inline: 8.25rem;
 }
+.relative {
+  position: relative;
+}
 
 /* Basic document structure */
 body {
   max-width: 72rem;
   margin: auto;
+  font-family: var(--sans-serif);
+}
+.header-wrapper {
+  overflow: hidden;
+  padding-bottom: 15rem;
 }
 nav {
   padding-top: 2.8rem;
   display: flex;
   justify-content: space-between;
+}
+.hero {
+  padding-top: 2.75rem;
+  text-align: center;
+}
+.hero > * {
+  position: relative;
+}
+
+/* Element specific rules */
+#cta-accent::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid var(--color-cta);
+  bottom: 0.5rem;
+  left: 0rem;
+}
+.hero > .cta {
+  padding-top: 2.75rem;
+}
+.hero > .hero-image {
+  padding-top: 2.5rem;
+  min-height: 10rem;
+}
+#bg-pattern-1 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  transform: translateX(-40%);
+}
+#bg-pattern-2 {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  transform: translateX(40%);
+}
+#curve {
+  height: 11rem;
+  width: 100%;
+  position: absolute;
+  top: 5rem;
+  right: 0rem;
+  background-color: var(--color-primary);
+  clip-path: ellipse(60% 55% at 50% 45%);
+}
+#hero-image {
+  position: absolute;
+  max-width: 38rem;
+  left: 50%;
+  transform: translateX(-45%);
 }
 
 /* Media queries */
