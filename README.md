@@ -55,13 +55,15 @@ Based on my layout sketch I *think* that I'll be creating this page like so:
 2. Header-hero section with 3 divs where the SVG components are transformed in position or scale. Thinking I can do this with relative positioning but not entirely sure. The curved border edge I will have to look up how to do
 3. Pretty simple grid section for the 1-2-3 parts
 4. The "owner headshot" and "Be the first to test" parts actually look fun to implement and I'm thinking that they will be transforms adjusted for media layouts. It looks like each is sized to fit in its own block but is then moved. I'm trying that first
-5. Footer again super each with some centered logos/links
+5. Footer again super easy with some centered logos/links
 
 ![](./notes-sketch.jpg)
 
 - Readme/notes/plan update (0:20)
 - Nav and some media queries (1:02)
-- - I was hoping to get the inline padding to shrink in a linear fashion as the screen decreased in size but discovered that the CSS calc function is not that capable...yet
+  - I was hoping to get the inline padding to shrink in a linear fashion as the screen decreased in size but discovered that the CSS calc function is not that capable...yet
+- Header for desktop (2:04)
+  - Holy heck getting the curved of that bottom edge, along with the overflow content, was a lot more than I was anticipating. Had to spend a good chunk of time looking up how to implement, using GPT, and finally settled on a clip-path on an absolute position div under the phone image that was then clipped with an ellipse shape
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
