@@ -64,6 +64,7 @@ Based on my layout sketch I *think* that I'll be creating this page like so:
   - I was hoping to get the inline padding to shrink in a linear fashion as the screen decreased in size but discovered that the CSS calc function is not that capable...yet
 - Header for desktop (2:04)
   - Holy heck getting the curved of that bottom edge, along with the overflow content, was a lot more than I was anticipating. Had to spend a good chunk of time looking up how to implement, using GPT, and finally settled on a clip-path on an absolute position div under the phone image that was then clipped with an ellipse shape
+- Media queries for the header, I forgot about these (0:49)
 
 ```html
 <h1>Some HTML code I'm proud of</h1>

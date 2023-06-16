@@ -159,6 +159,10 @@ nav {
   .padding-sides {
     padding-inline: calc(0.1 * 100vw);
   }
+  h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
 }
 @media (max-width: 768px) {
   .padding-sides {
@@ -166,5 +170,89 @@ nav {
   }
   nav {
     padding-top: 1.8rem;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  p, button {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+  .btn-primary {
+    padding-inline: 1.2rem;
+    padding-block: 0.6rem;
+    min-width: unset;
+    max-height: 2.75rem;
+  }
+  .hero > .cta {
+    padding-top: 1.95rem;
+  }
+  #cta-accent::after {
+    bottom: 0.35rem;
+  }
+  .hero > .hero-image {
+    padding-top: 2.75rem;
+    min-height: 6rem;
+  }
+  #hero-image {
+    max-width: 25.7rem;
+  }
+  #bg-pattern-1 {
+    transform: translateX(-67%);
+  }
+  #bg-pattern-2 {
+    transform: translateX(55%);
+  }
+  #curve {
+    height: 6rem;
+    top: 4rem;
+  }
+}
+@media (max-width: 550px) {
+  .padding-sides {
+    padding-inline: 0.8rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+  }
+  .btn-primary {
+    padding-inline: 1.2rem;
+    padding-block: 0.6rem;
+    min-width: unset;
+    max-height: 2.75rem;
+  }
+  .hero > .cta {
+    padding-top: 1.95rem;
+  }
+  .hero > .hero-image {
+    padding-top: 3.2rem;
+    min-height: 5rem;
+  }
+  #hero-image {
+    max-width: 83%;
+  }
+  #bg-pattern-1 {
+    transform: translateX(-100%);
+  }
+  #bg-pattern-2 {
+    transform: translateX(100%);
+  }
+  #curve {
+    height: 5rem;
+    top: 4rem;
+  }
+}
+@media (max-width: 375px) {
+  #cta-accent::after {
+    bottom: 0.2rem;
+  }
+  #hero-image {
+    max-width: 16rem;
+  }
+  #curve {
+    height: 4rem;
+    top: 3.5rem;
   }
 }
