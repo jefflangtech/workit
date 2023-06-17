@@ -65,6 +65,9 @@ Based on my layout sketch I *think* that I'll be creating this page like so:
 - Header for desktop (2:04)
   - Holy heck getting the curved of that bottom edge, along with the overflow content, was a lot more than I was anticipating. Had to spend a good chunk of time looking up how to implement, using GPT, and finally settled on a clip-path on an absolute position div under the phone image that was then clipped with an ellipse shape
 - Media queries for the header, I forgot about these (0:49)
+- 1 2 3 text content section which I used flexbox for, regretted not using grid, realized grid wouldn't solve all the problems, stuck with flexbox, still not sure (1:48)
+  - I was surprised by another very light background with curved section that I missed probably because my monitors don't have great contrast. Whoops.
+- Founder section, closest I've gotten to my time estimate so far (0:56)
 
 ```html
 <h1>Some HTML code I'm proud of</h1>

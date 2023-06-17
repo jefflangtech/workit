@@ -193,21 +193,60 @@ nav {
   border: 1px solid var(--color-primary);
   border-radius: 50%;
 }
-
 .founder-container {
   position: relative;
+  padding-inline: 8.25rem;
 }
 #founder-img {
+  width: 43%;
   max-width: 23.85rem;
   position: relative;
   left: 0rem;
   top: 14rem;
+  z-index: -1;
+}
+.founder-cta {
+  color: var(--white);
+  width: 65.5%;
+  padding: 3.2rem;
+  margin-left: auto;
+}
+.founder-cta > *:nth-child(-n + 2) {
+  margin-bottom: 1.6rem;
+}
+.cta {
+  position: relative;
+}
+#bg-pattern-3 {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+
+
+footer {
+  min-height: 10rem;
 }
 
 /* Media queries */
+@media (max-width: 1230px) {
+  .founder-container {
+    padding-inline: 4rem;
+  }
+}
 @media (max-width: 1098px) {
   .padding-sides {
     padding-inline: calc(0.15 * 100vw);
+  }
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  .founder-cta {
+    padding: 2.8rem;
+  }
+  #bg-pattern-3 {
+    right: -1rem;
   }
 }
 @media (max-width: 933px) {
@@ -217,6 +256,22 @@ nav {
   h1 {
     font-size: 3.5rem;
     line-height: 3.5rem;
+  }
+  .founder-container {
+    padding-inline: 2rem;
+    margin-top: 3rem;
+  }
+  #founder-img {
+    width: 14rem;
+    left: 0rem;
+    top: 6.5rem;
+    z-index: -1;
+  }
+  .founder-cta {
+    width: 74.5%;
+  }
+  #bg-pattern-3 {
+    right: -2rem;
   }
 }
 @media (max-width: 768px) {
@@ -232,6 +287,10 @@ nav {
   h1 {
     font-size: 3rem;
     line-height: 3rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
   p, button {
     font-size: 0.8rem;
@@ -284,19 +343,25 @@ nav {
     margin-bottom: 0.8rem;
   }
   .card-title::before {
-    display: block;
     position: absolute;
     margin-top: 2.6rem;
     left: -1rem;
-    width: 2.3rem;
-    height: 2.3rem;
-    border: 1px solid var(--color-primary);
-    border-radius: 50%;
+  }
+}
+@media (max-width: 660px) {
+  #founder-img {
+    top: 5rem;
   }
 }
 @media (max-width: 550px) {
+  .header-wrapper {
+    padding-bottom: 13rem;
+  }
   .padding-sides {
     padding-inline: 0.8rem;
+  }
+  .padding-narrow {
+    padding-inline: 0rem;
   }
   h1 {
     font-size: 2.3rem;
@@ -331,8 +396,56 @@ nav {
     height: 5rem;
     bottom: -3.5rem;
   }
+  .card-container {
+    gap: 1.3rem;
+  }
+  .card {
+    text-align: center;
+    margin-left: 0rem;
+  }
+  .card-title {
+    margin-bottom: 0.8rem;
+  }
+  .card-title::before {
+    position: static;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    margin-top: 0rem;
+    margin-inline: auto;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .founder-container {
+    padding-inline: 0.8rem;
+    margin-top: 6rem;
+  }
+  #founder-img {
+    top: 2.5rem;
+    position: relative;
+    margin: auto;
+  }
+  .founder-cta {
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .founder-cta > *:nth-child(-n + 1) {
+    margin-bottom: 0.8rem;
+  }
+  #bg-pattern-3 {
+    visibility: hidden;
+  }
 }
 @media (max-width: 375px) {
+  .header-wrapper {
+    padding-bottom: 10rem;
+  }
   #cta-accent::after {
     bottom: 0.2rem;
   }
