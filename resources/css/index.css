@@ -75,11 +75,17 @@ button {
 .bg-dark {
   background-color: var(--color-primary);
 }
+.bg-light {
+  background-color: var(--color-bg);
+}
 .padding-sides {
   padding-inline: 8.25rem;
 }
 .relative {
   position: relative;
+}
+.flex {
+  display: flex;
 }
 
 /* Basic document structure */
@@ -102,6 +108,9 @@ nav {
   text-align: center;
 }
 .hero > * {
+  position: relative;
+}
+.text-content {
   position: relative;
 }
 
@@ -133,7 +142,7 @@ nav {
   right: 0rem;
   transform: translateX(40%);
 }
-#curve {
+.curve-1 {
   height: 11rem;
   width: 100%;
   position: absolute;
@@ -142,11 +151,57 @@ nav {
   background-color: var(--color-primary);
   clip-path: ellipse(60% 55% at 50% 45%);
 }
+.curve-2 {
+  height: 13rem;
+  width: 100%;
+  position: absolute;
+  bottom: -8.5rem;
+  right: 0rem;
+  z-index: -1;
+  background-color: var(--color-bg);
+  clip-path: ellipse(60% 55% at 50% 45%);
+}
 #hero-image {
   position: absolute;
   max-width: 38rem;
   left: 50%;
   transform: translateX(-45%);
+}
+.card-container {
+  padding-top: 4.5rem;
+  gap: 1.3rem;
+  counter-reset: cards;
+}
+.card {
+  text-align: center;
+  color: var(--color-primary);
+}
+.card-title {
+  margin-bottom: 1.3rem;
+}
+.card-title::before {
+  counter-increment: cards;
+  content: counter(cards);
+  display: block;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 2.3rem;
+  margin-inline: auto;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+}
+
+.founder-container {
+  position: relative;
+}
+#founder-img {
+  max-width: 23.85rem;
+  position: relative;
+  left: 0rem;
+  top: 14rem;
 }
 
 /* Media queries */
@@ -167,6 +222,9 @@ nav {
 @media (max-width: 768px) {
   .padding-sides {
     padding-inline: 2rem;
+  }
+  .padding-narrow {
+    padding-inline: 2.9rem;
   }
   nav {
     padding-top: 1.8rem;
@@ -204,9 +262,36 @@ nav {
   #bg-pattern-2 {
     transform: translateX(55%);
   }
-  #curve {
+  .curve-1 {
     height: 6rem;
     top: 4rem;
+  }
+  .curve-2 {
+    height: 6rem;
+    bottom: -4.5rem;
+  }
+  .card-container {
+    flex-direction: column;
+    padding-top: 0rem;
+    gap: 2.4rem;
+  }
+  .card {
+    text-align: left;
+    margin-left: 4rem;
+    position: relative;
+  }
+  .card-title {
+    margin-bottom: 0.8rem;
+  }
+  .card-title::before {
+    display: block;
+    position: absolute;
+    margin-top: 2.6rem;
+    left: -1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
   }
 }
 @media (max-width: 550px) {
@@ -239,9 +324,12 @@ nav {
   #bg-pattern-2 {
     transform: translateX(100%);
   }
-  #curve {
+  .curve-1 {
     height: 5rem;
-    top: 4rem;
+  }
+  .curve-2 {
+    height: 5rem;
+    bottom: -3.5rem;
   }
 }
 @media (max-width: 375px) {
