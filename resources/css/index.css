@@ -222,10 +222,21 @@ nav {
   top: 0rem;
   right: 0rem;
 }
-
-
 footer {
-  min-height: 10rem;
+  margin-top: 6rem;
+  margin-bottom: 5.5rem;
+}
+footer > * {
+  margin-inline: auto;
+  margin-bottom: 2.9rem;
+}
+.social-icons {
+  gap: 1.4rem;
+  justify-content: center;
+}
+.social-icons > *:hover path {
+  fill: var(--color-primary);
+  cursor: pointer;
 }
 
 /* Media queries */
@@ -440,6 +451,9 @@ footer {
   }
   #bg-pattern-3 {
     visibility: hidden;
+  }
+  footer {
+    margin-top: 3.7rem;
   }
 }
 @media (max-width: 375px) {

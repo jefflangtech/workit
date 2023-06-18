@@ -68,19 +68,8 @@ Based on my layout sketch I *think* that I'll be creating this page like so:
 - 1 2 3 text content section which I used flexbox for, regretted not using grid, realized grid wouldn't solve all the problems, stuck with flexbox, still not sure (1:48)
   - I was surprised by another very light background with curved section that I missed probably because my monitors don't have great contrast. Whoops.
 - Founder section, closest I've gotten to my time estimate so far (0:56)
+- No unexpected surprises on the footer and only had to embed the SVG icons in the HTML so I could manipulate the color on hover (0:20)
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
 ```
 
 ### Continued development
