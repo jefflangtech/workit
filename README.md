@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/workit-landing-page-with-html-and-css-XVftN7fkmS](https://www.frontendmentor.io/solutions/workit-landing-page-with-html-and-css-XVftN7fkmS)
 - Live Site URL: [https://jefflangtech.github.io/workit/index.html](https://jefflangtech.github.io/workit/index.html)
 
 ## My process
@@ -68,7 +68,9 @@ Based on my layout sketch I *think* that I'll be creating this page like so:
   - I was surprised by another very light background with curved section that I missed probably because my monitors don't have great contrast. Whoops.
 - Founder section, closest I've gotten to my time estimate so far (0:56)
 - No unexpected surprises on the footer and only had to embed the SVG icons in the HTML so I could manipulate the color on hover (0:20)
-- Final validation checks and CSS optimization/organization
+- Final validation checks and CSS optimization/organization (0:27)
+
+Total time: 9:45
 
 ### Continued development
 
