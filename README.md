@@ -40,7 +40,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 
 ### Step by step
 
@@ -69,17 +68,17 @@ Based on my layout sketch I *think* that I'll be creating this page like so:
   - I was surprised by another very light background with curved section that I missed probably because my monitors don't have great contrast. Whoops.
 - Founder section, closest I've gotten to my time estimate so far (0:56)
 - No unexpected surprises on the footer and only had to embed the SVG icons in the HTML so I could manipulate the color on hover (0:20)
-
-```
+- Final validation checks and CSS optimization/organization
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Obviously I need to work on my time estimates. This is the first time I've tried it so abject failure was expected. Primarily I'm wayyyy underestimating how long it will take me to implement things.
+
+The other aspect I will be looking more closely at for the next project is working on solutions to problems before I'm in the thick of implementing the layout. I honestly don't know if others do that down to the last detail, and for some things I really do just wing it and address at the time it comes up, so I'll be doing some research as well to see what best practices exist.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path) - Creating an ellipse shape that was layered under another div is how I implemented the curves. MDN, as always, helped me to understand how it works...kinda.
 
 ## Author
 

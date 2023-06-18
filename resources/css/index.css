@@ -1,10 +1,11 @@
 /* CSS Structure
-- Fonts & design system
-- Utility classes
-- Basic document structure
-
-- Media queries
+- Fonts & design system (line 9)
+- Utility classes (line 75)
+- Basic document structure (line 92)
+- Element specific rules (line 118)
+- Media queries (line 243)
 */
+
 @font-face {
   font-family: "Fraunces";
   src: url('../fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
@@ -107,12 +108,6 @@ nav {
   padding-top: 2.75rem;
   text-align: center;
 }
-.hero > * {
-  position: relative;
-}
-.text-content {
-  position: relative;
-}
 
 /* Element specific rules */
 #cta-accent::after {
@@ -194,13 +189,11 @@ nav {
   border-radius: 50%;
 }
 .founder-container {
-  position: relative;
   padding-inline: 8.25rem;
 }
 #founder-img {
   width: 43%;
   max-width: 23.85rem;
-  position: relative;
   left: 0rem;
   top: 14rem;
   z-index: -1;
@@ -213,9 +206,6 @@ nav {
 }
 .founder-cta > *:nth-child(-n + 2) {
   margin-bottom: 1.6rem;
-}
-.cta {
-  position: relative;
 }
 #bg-pattern-3 {
   position: absolute;
@@ -348,7 +338,6 @@ footer > * {
   .card {
     text-align: left;
     margin-left: 4rem;
-    position: relative;
   }
   .card-title {
     margin-bottom: 0.8rem;
@@ -434,7 +423,6 @@ footer > * {
   }
   #founder-img {
     top: 2.5rem;
-    position: relative;
     margin: auto;
   }
   .founder-cta {
